@@ -499,7 +499,7 @@ class PlayState extends MusicBeatState
 		add(boyfriend);
 
 
-		// this sucks but im LAZYYYYY
+		// this sucks but im LAZYYYYYY
 		if (SONG.song.toLowerCase() == 'swing') {
 			gf.setGraphicSize(500);
 			boyfriend.setGraphicSize(300);
