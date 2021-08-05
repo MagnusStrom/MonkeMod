@@ -36,6 +36,7 @@ class HealthIcon extends FlxSprite
 			animation.add('parents-christmas', [17], 0, false, isPlayer);
 			animation.add('monster', [19, 20, 19], 0, false, isPlayer);
 			animation.add('monster-christmas', [19, 20, 19], 0, false, isPlayer);
+			animation.add('monke', [32, 33, 34], 0, false, isPlayer);
 		} else {
 			animation.add('bf', [0, 1, 2], 0, false, isPlayer);
 			animation.add('bf-car', [0, 1, 2], 0, false, isPlayer); // he turned into a convertible 

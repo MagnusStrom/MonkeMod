@@ -44,6 +44,7 @@ class PlayState extends MusicBeatState
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
 
+	var monkex:Float = 250;
 	public static var carGf:Bool = Config.CONFIGGfCar; // Girlfriend in week 4 sits on car
 
 	var halloweenLevel:Bool = false;
@@ -61,6 +62,8 @@ class PlayState extends MusicBeatState
 	private var curSection:Int = 0;
 
 	private var camFollow:FlxObject;
+
+	var popMonke:FlxSprite;
 
 	private static var prevCamFollow:FlxObject;
 
@@ -332,6 +335,16 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 						bg.setGraphicSize(2000);
+
+						popMonke = new FlxSprite(0, monkex);
+						popMonke.frames = Paths.getSparrowAtlas('POP_Gorilla');
+						popMonke.animation.addByPrefix('idle', 'POP_Gorilla UP', 24, false);
+						popMonke.setGraphicSize(Std.int(popMonke.width / 2));
+						popMonke.scrollFactor.set(0, 0);
+						popMonke.updateHitbox();
+						popMonke.screenCenter(X);
+						add(popMonke);
+						popMonke.visible = false;
 						/*var tree = new FlxSprite(100, -200).loadGraphic(Paths.image('tree'));
 						tree.antialiasing = true;
 						tree.scrollFactor.set(1, 1);
@@ -3287,6 +3300,16 @@ class PlayState extends MusicBeatState
 				}
 		}
 		
+		if (SONG.song.toLowerCase() == 'swing' && FlxG.random.bool(1))
+		{
+			FlxG.log.add("poppy time");
+			popMonke.visible = true;
+			popMonke.animation.play('idle');
+			var timer = new FlxTimer().start(3, function(timer) {
+				popMonke.visible = false;
+			});
+		}
+
 		if (isHalloween && FlxG.random.bool(20) && curBeat > lightningStrikeBeat + lightningOffset)
 		{
 			lightningStrikeShit();

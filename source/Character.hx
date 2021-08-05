@@ -134,7 +134,6 @@ class Character extends FlxSprite
 				antialiasing = false;
 
 			case 'monke':
-				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('GorillaKING_assets');
 				frames = tex;
 				animation.addByPrefix('idle', 'GorillaKING_assets Idle', 10);
@@ -143,12 +142,21 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'GorillaKING_assets Down', 10);
 				animation.addByPrefix('singLEFT', 'GorillaKING_assets Left', 10);
 
+				// BODY FOCUSED
+				/* 
 				addOffset('idle', 0, -1);
 				addOffset("singDOWN", 0, -1);
 				addOffset("singRIGHT", -2, 0);
 				addOffset("singUP", -6, 0);
 				addOffset("singLEFT", 9, 0);
-
+				*/
+				
+				// ARM FOCUSED
+				addOffset('idle', 0, -1);
+				addOffset("singRIGHT", 0, -1);
+				addOffset("singDOWN", 1, 3);
+				addOffset("singLEFT", 0, -2);
+				addOffset("singUP", 0, -1);
 				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('spooky_kids_assets');

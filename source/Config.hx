@@ -15,7 +15,7 @@ class Config extends MusicBeatState
 	* Week colors. Each color corresponds to its custom week
 	**/
 	public static var weekColors:Array<FlxColor> = [
-		0xFFca1f6f, // GF
+		FlxColor.fromRGB(43, 255, 251), // GF
 		0xFFc885e5, // DAD
 		0xFFf9a326, // SPOOKY
 		0xFFceec75, // PICO
@@ -46,7 +46,8 @@ class Config extends MusicBeatState
 		0xFFf5ff8a, // MONSTER-CHRISTMAS
 		0xFFffaa6f, // SENPAI
 		0xFFffaa6f, // SENPAI-ANGRY
-		0xFFff5d87 // SPIRIT
+		0xFFff5d87, // SPIRIT
+		FlxColor.fromRGB(43, 255, 251)
 	];
 
 	/**

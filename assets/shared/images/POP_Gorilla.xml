@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="POP_Gorilla.png"><SubTexture name="POP_Gorilla UP0000" x="0" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0001" x="1733" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0002" x="3466" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0003" x="5199" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0004" x="0" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0005" x="1733" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0006" x="3466" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0007" x="5199" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0008" x="0" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0009" x="1733" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0010" x="3466" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0011" x="5199" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0012" x="0" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0013" x="1733" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0014" x="3466" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0015" x="5199" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0016" x="0" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0017" x="1733" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0018" x="3466" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0019" x="5199" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0020" x="0" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0021" x="1733" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0022" x="3466" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0023" x="5199" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0024" x="0" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0025" x="1733" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0026" x="3466" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0027" x="5199" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0028" x="0" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0029" x="1733" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0030" x="3466" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0031" x="5199" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0032" x="0" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0033" x="1733" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0034" x="3466" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0035" x="5199" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0036" x="0" y="8631" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0037" x="1733" y="8631" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0038" x="3466" y="8631" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0039" x="5199" y="8631" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="POP_Gorilla UP0040" x="0" y="9590" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+</TextureAtlas>

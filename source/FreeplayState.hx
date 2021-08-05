@@ -39,10 +39,6 @@ class FreeplayState extends MusicBeatState
 	{
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglist'));
 
-		for (i in 0...initSonglist.length)
-		{
-			songs.push(new SongMetadata(initSonglist[i], 1, 'gf'));
-		}
 
 		/* 
 			if (FlxG.sound.music != null)
@@ -63,7 +59,7 @@ class FreeplayState extends MusicBeatState
 		isDebug = true;
 		#end
 
-		addWeek(['swing'], 1, ['bf']); // Modchart test  song
+		addWeek(['swing'], 1, ['monke']); // Modchart test  song
 		// LOAD CHARACTERS
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
