@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ANGRY_LAVA.png"><SubTexture name="ANGRY_LAVA ATTACK0000" x="0" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0001" x="1733" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0002" x="3466" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0003" x="5199" y="0" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0004" x="0" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0005" x="1733" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0006" x="3466" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0007" x="5199" y="959" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0008" x="0" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0009" x="1733" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0010" x="3466" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0011" x="5199" y="1918" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0012" x="0" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0013" x="1733" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0014" x="3466" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0015" x="5199" y="2877" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0016" x="0" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0017" x="1733" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0018" x="3466" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0019" x="5199" y="3836" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0020" x="0" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0021" x="1733" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0022" x="3466" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0023" x="5199" y="4795" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0024" x="0" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0025" x="1733" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0026" x="3466" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0027" x="5199" y="5754" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0028" x="0" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0029" x="1733" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0030" x="3466" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0031" x="5199" y="6713" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0032" x="0" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0033" x="1733" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0034" x="3466" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0035" x="5199" y="7672" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+<SubTexture name="ANGRY_LAVA ATTACK0036" x="0" y="8631" width="1733" height="959" frameX="0" frameY="0" frameWidth="1733" frameHeight="959" />
+</TextureAtlas>

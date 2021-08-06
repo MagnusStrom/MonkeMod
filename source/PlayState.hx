@@ -44,7 +44,7 @@ class PlayState extends MusicBeatState
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
 
-	var monkex:Float = 250;
+	var monkex:Float = FlxG.height - 100;
 	public static var carGf:Bool = Config.CONFIGGfCar; // Girlfriend in week 4 sits on car
 
 	var halloweenLevel:Bool = false;
@@ -151,12 +151,15 @@ class PlayState extends MusicBeatState
 
 	private var endingSong = false;
 
+	var monkeCanPop:Bool = true;
 	// modcharting
 
 	var modcharting:Bool = false;
 	var modchart:String;
 
 	var bg:FlxSprite;
+
+	var lemming:FlxSprite;
 
 	function sustain2(strum:Int, spr:FlxSprite, note:Note):Void
 	{
@@ -328,23 +331,32 @@ class PlayState extends MusicBeatState
 			case 'swing':
 				{
 					{
+						defaultCamZoom = 0.89;
 						curStage = 'stage';
 						bg = new FlxSprite(100, -200).loadGraphic(Paths.image('monkebg'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(1, 1);
 						bg.active = false;
 						add(bg);
-						bg.setGraphicSize(2000);
+						bg.setGraphicSize(3000);
 
-						popMonke = new FlxSprite(0, monkex);
+						popMonke = new FlxSprite(-100, FlxG.height - 400);
 						popMonke.frames = Paths.getSparrowAtlas('POP_Gorilla');
 						popMonke.animation.addByPrefix('idle', 'POP_Gorilla UP', 24, false);
 						popMonke.setGraphicSize(Std.int(popMonke.width / 2));
 						popMonke.scrollFactor.set(0, 0);
 						popMonke.updateHitbox();
-						popMonke.screenCenter(X);
+					//	popMonke.screenCenter(X);
 						add(popMonke);
 						popMonke.visible = false;
+
+						lemming = new FlxSprite(100, 130);
+						lemming.frames = Paths.getSparrowAtlas('LEMMINGISCOOL');
+						lemming.animation.addByPrefix('idle', 'LEMMINGISCOOL BOBBING', 24, true);
+						//lemming.setGraphicSize
+						lemming.scrollFactor.set(1, 1);
+						add(lemming);
+						lemming.animation.play('idle');
 						/*var tree = new FlxSprite(100, -200).loadGraphic(Paths.image('tree'));
 						tree.antialiasing = true;
 						tree.scrollFactor.set(1, 1);
@@ -517,11 +529,13 @@ class PlayState extends MusicBeatState
 			gf.setGraphicSize(500);
 			boyfriend.setGraphicSize(300);
 			gf.x = 520;
-			gf.y = 70;
+			gf.y = 170;
+			gf.y += 60;
 			boyfriend.x = 970;
 			boyfriend.y = 350;
+			boyfriend.y += 180; // lol
 			dad.x += 200;
-			dad.y += 110;
+			dad.y += 310;
 		}
 
 		if (FlxG.save.data.maxoptimization) {
@@ -3300,13 +3314,20 @@ class PlayState extends MusicBeatState
 				}
 		}
 		
-		if (SONG.song.toLowerCase() == 'swing' && FlxG.random.bool(1))
+		if (SONG.song.toLowerCase() == 'swing' && FlxG.random.bool(10) && monkeCanPop)
 		{
+			monkeCanPop = false;
 			FlxG.log.add("poppy time");
+			var down = FlxG.random.bool(50);
+			popMonke.y = (down ? FlxG.height - 400 : -100);
+			popMonke.angle = (down ? 0 : 180);
 			popMonke.visible = true;
 			popMonke.animation.play('idle');
 			var timer = new FlxTimer().start(3, function(timer) {
 				popMonke.visible = false;
+				var timer = new FlxTimer().start(10, function(timer) {
+					monkeCanPop = true;
+				});
 			});
 		}
 

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="LEMMINGISCOOL.png"><SubTexture name="LEMMINGISCOOL BOBBING0000" x="0" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0001" x="754" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0002" x="1508" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0003" x="2262" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0004" x="0" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0005" x="754" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0006" x="1508" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0007" x="2262" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0008" x="0" y="1498" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="LEMMINGISCOOL BOBBING0009" x="754" y="1498" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+</TextureAtlas>
