@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Chasm_Climbing.png"><SubTexture name="Chasm_Climbing CLIMBING0000" x="0" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0001" x="754" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0002" x="1508" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0003" x="2262" y="0" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0004" x="0" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0005" x="754" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0006" x="1508" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0007" x="2262" y="749" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0008" x="0" y="1498" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0009" x="754" y="1498" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0010" x="1508" y="1498" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+<SubTexture name="Chasm_Climbing CLIMBING0011" x="2262" y="1498" width="754" height="749" frameX="0" frameY="0" frameWidth="754" frameHeight="749" />
+</TextureAtlas>

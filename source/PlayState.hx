@@ -64,6 +64,7 @@ class PlayState extends MusicBeatState
 	private var camFollow:FlxObject;
 
 	var popMonke:FlxSprite;
+	var swingMonke:FlxSprite;
 
 	private static var prevCamFollow:FlxObject;
 
@@ -160,6 +161,7 @@ class PlayState extends MusicBeatState
 	var bg:FlxSprite;
 
 	var lemming:FlxSprite;
+	var monkeCanClimb:Bool = true;
 
 	function sustain2(strum:Int, spr:FlxSprite, note:Note):Void
 	{
@@ -349,6 +351,19 @@ class PlayState extends MusicBeatState
 					//	popMonke.screenCenter(X);
 						add(popMonke);
 						popMonke.visible = false;
+
+						swingMonke = new FlxSprite(400, 130);
+						swingMonke.x = 750;
+						swingMonke.y = 170;
+						swingMonke.y += 60;
+						swingMonke.frames = Paths.getSparrowAtlas('Chasm_Climbing');
+						swingMonke.animation.addByPrefix('idle', 'Chasm_Climbing CLIMBING', 10, true);
+						swingMonke.setGraphicSize(Std.int(swingMonke.width / 2));
+						swingMonke.scrollFactor.set(1, 1);
+						swingMonke.updateHitbox();
+					//	popMonke.screenCenter(X);
+						add(swingMonke);
+						swingMonke.visible = false;
 
 						lemming = new FlxSprite(100, 130);
 						lemming.frames = Paths.getSparrowAtlas('LEMMINGISCOOL');
@@ -3330,6 +3345,26 @@ class PlayState extends MusicBeatState
 				});
 			});
 		}
+
+		if (SONG.song.toLowerCase() == 'swing' && FlxG.random.bool(50) && monkeCanClimb)
+			{
+				monkeCanClimb = false;
+				FlxG.log.add("climby time");
+				swingMonke.visible = true;
+				swingMonke.y = 170;
+				swingMonke.y += 60;
+				swingMonke.animation.play('idle');
+				swingMonke.velocity.y = -200;
+				
+
+				var timer = new FlxTimer().start(5, function(timer) {
+					swingMonke.visible = false;
+					swingMonke.velocity.y = 0;
+					var timer = new FlxTimer().start(3, function(timer) {
+						monkeCanClimb = true;
+					});
+				});
+			}
 
 		if (isHalloween && FlxG.random.bool(20) && curBeat > lightningStrikeBeat + lightningOffset)
 		{
