@@ -38,6 +38,7 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
+		FlxG.save.bind('savedata', 'data');
 		ProjectFNF.updateOptions();
 		
 		#if polymod

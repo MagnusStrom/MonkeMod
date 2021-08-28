@@ -263,6 +263,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'swing':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('swing/talk'));
 		}
 
 		#if desktop
@@ -367,11 +369,10 @@ class PlayState extends MusicBeatState
 
 						lemming = new FlxSprite(100, 130);
 						lemming.frames = Paths.getSparrowAtlas('LEMMINGISCOOL');
-						lemming.animation.addByPrefix('idle', 'LEMMINGISCOOL BOBBING', 24, true);
+						lemming.animation.addByPrefix('idle', 'LEMMINGISCOOL BOBBING', 24, false);
 						//lemming.setGraphicSize
 						lemming.scrollFactor.set(1, 1);
 						add(lemming);
-						lemming.animation.play('idle');
 						/*var tree = new FlxSprite(100, -200).loadGraphic(Paths.image('tree'));
 						tree.antialiasing = true;
 						tree.scrollFactor.set(1, 1);
@@ -3161,6 +3162,10 @@ class PlayState extends MusicBeatState
 				dad.dance();
 		}
 		// FlxG.log.add('change bpm' + SONG.notes[Std.int(curStep / 16)].changeBPM);
+
+		if (SONG.song.toLowerCase() == 'swing') {
+			lemming.animation.play('idle');
+		}
 		wiggleShit.update(Conductor.crochet);
 
 				// modcharting
@@ -3351,7 +3356,7 @@ class PlayState extends MusicBeatState
 				monkeCanClimb = false;
 				FlxG.log.add("climby time");
 				swingMonke.visible = true;
-				swingMonke.y = 170;
+				swingMonke.y = 370;
 				swingMonke.y += 60;
 				swingMonke.animation.play('idle');
 				swingMonke.velocity.y = -200;
