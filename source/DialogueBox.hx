@@ -26,7 +26,10 @@ class DialogueBox extends FlxSpriteGroup
 
 	public var finishThing:Void->Void;
 
-	var portraitLeft:FlxSprite;
+	var portraitLeftNormal:FlxSprite;
+	var portraitLeftHappy:FlxSprite;
+	var portraitLeftSad:FlxSprite;
+	var portraitLem:FlxSprite;
 	var portraitRight:FlxSprite;
 
 	var handSelect:FlxSprite;
@@ -63,11 +66,11 @@ class DialogueBox extends FlxSpriteGroup
 		var hasDialog = false;
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'senpai':
+			case 'swing':
 				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
-				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);//speech bubble normal
+				box.animation.addByPrefix('normal', 'speech bubble normal', 24, false);
 			case 'roses':
 				hasDialog = true;
 				FlxG.sound.play(Paths.sound('ANGRY_TEXT_BOX'));
@@ -92,34 +95,54 @@ class DialogueBox extends FlxSpriteGroup
 		if (!hasDialog)
 			return;
 
-		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-		portraitLeft.updateHitbox();
-		portraitLeft.scrollFactor.set();
-		add(portraitLeft);
-		portraitLeft.visible = false;
+		portraitLeftNormal = new FlxSprite(-300, 300).loadGraphic(Paths.image('Normal'));
+		portraitLeftNormal.updateHitbox();
+		portraitLeftNormal.scrollFactor.set();
+		add(portraitLeftNormal);
+		portraitLeftNormal.visible = false;
 
-		portraitRight = new FlxSprite(0, 40);
-		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+		portraitLeftHappy = new FlxSprite(-300, 300).loadGraphic(Paths.image('Happy'));
+		portraitLeftHappy.updateHitbox();
+		portraitLeftHappy.scrollFactor.set();
+		add(portraitLeftHappy);
+		portraitLeftHappy.visible = false;
+
+		portraitLeftSad = new FlxSprite(-300, 300).loadGraphic(Paths.image('Sad'));
+		portraitLeftSad.updateHitbox();
+		portraitLeftSad.scrollFactor.set();
+		add(portraitLeftSad);
+		portraitLeftSad.visible = false;
+
+		portraitRight = new FlxSprite(750, 250);
+		portraitRight.loadGraphic(Paths.image('bftext'));
+		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.08));
 		portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
 		portraitRight.visible = false;
 
+		portraitLem = new FlxSprite(-300, 300).loadGraphic(Paths.image('Lemming'));
+		portraitLem.updateHitbox();
+		portraitLem.scrollFactor.set();
+		add(portraitLem);
+		portraitLem.visible = false;
+
 		box.animation.play('normalOpen');
-		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
+		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.15));
 		box.updateHitbox();
 		add(box);
 
 		box.screenCenter(X);
-		portraitLeft.screenCenter(X);
+		box.y += 400;
+
+		portraitLeftNormal.screenCenter(X);
+		portraitLeftHappy.screenCenter(X);
+		portraitLeftSad.screenCenter(X);
+		portraitLem.screenCenter(X);
+		portraitRight.screenCenter(X);
 
 		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
-		add(handSelect);
+//		add(handSelect);
 
 		if (!talkingRight)
 		{
@@ -131,8 +154,8 @@ class DialogueBox extends FlxSpriteGroup
 		dropText.color = 0xFFD89494;
 		add(dropText);
 
-		swagDialogue = new FlxTypeText(240, 500, Std.int(FlxG.width * 0.6), "", 32);
-		swagDialogue.font = 'Pixel Arial 11 Bold';
+		swagDialogue = new FlxTypeText(240, 550, Std.int(FlxG.width * 0.6), "", 32);
+		swagDialogue.setFormat("HappyMonkey-Regular.ttf", 32, FlxColor.BLACK);
 		swagDialogue.color = 0xFF3F2021;
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
@@ -140,6 +163,7 @@ class DialogueBox extends FlxSpriteGroup
 		dialogue = new Alphabet(0, 80, "", false, true);
 		// dialogue.x = 90;
 		// add(dialogue);
+		dropText.visible = false;
 	}
 
 	var dialogueOpened:Bool = false;
@@ -147,17 +171,8 @@ class DialogueBox extends FlxSpriteGroup
 
 	override function update(elapsed:Float)
 	{
-		// HARD CODING CUZ IM STUPDI
-		if (PlayState.SONG.song.toLowerCase() == 'roses')
-			portraitLeft.visible = false;
-		if (PlayState.SONG.song.toLowerCase() == 'thorns')
-		{
-			portraitLeft.color = FlxColor.BLACK;
-			swagDialogue.color = FlxColor.WHITE;
-			dropText.color = FlxColor.BLACK;
-		}
-
 		dropText.text = swagDialogue.text;
+		
 
 		if (box.animation.curAnim != null)
 		{
@@ -193,7 +208,9 @@ class DialogueBox extends FlxSpriteGroup
 					{
 						box.alpha -= 1 / 5;
 						bgFade.alpha -= 1 / 5 * 0.7;
-						portraitLeft.visible = false;
+						portraitLeftSad.visible = false;
+						portraitLeftHappy.visible = false;
+						portraitLeftNormal.visible = false;
 						portraitRight.visible = false;
 						swagDialogue.alpha -= 1 / 5;
 						dropText.alpha = swagDialogue.alpha;
@@ -231,21 +248,58 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
-			case 'dad':
+			case 'normal':
+				box.flipX = true;
 				portraitRight.visible = false;
-				if (!portraitLeft.visible)
+				portraitLeftSad.visible = false;
+				portraitLeftHappy.visible = false;
+				if (!portraitLeftNormal.visible)
 				{
-					portraitLeft.visible = true;
-					portraitLeft.animation.play('enter');
+					portraitLeftNormal.visible = true;
+				}
+			case 'sad':
+				box.flipX = true;
+				portraitRight.visible = false;
+				portraitLeftHappy.visible = false;
+				portraitLeftNormal.visible = false;
+				if (!portraitLeftSad.visible)
+				{
+					portraitLeftSad.visible = true;
+				}
+			case 'happy':
+				box.flipX = true;
+				portraitRight.visible = false;
+				portraitLeftSad.visible = false;
+				portraitLeftNormal.visible = false;
+				if (!portraitLeftHappy.visible)
+				{
+					portraitLeftHappy.visible = true;
+				}
+			case 'lemming':
+				box.flipX = true;
+				portraitRight.visible = false;
+				portraitLeftSad.visible = false;
+				portraitLeftHappy.visible = false;
+				portraitLeftNormal.visible = false;
+				if (!portraitLem.visible)
+				{
+					portraitLem.visible = true;
 				}
 			case 'bf':
-				portraitLeft.visible = false;
+				box.flipX = false;
+				portraitLeftSad.visible = false;
+				portraitLeftHappy.visible = false;
+				portraitLeftNormal.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
 				}
 		}
+		/*
+								portraitLeftSad.visible = false;
+						portraitLeftHappy.visible = false;
+						portraitLeftNormal.visible = false;*/
 	}
 
 	function cleanDialog():Void

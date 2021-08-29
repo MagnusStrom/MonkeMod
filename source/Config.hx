@@ -55,7 +55,7 @@ class Config extends MusicBeatState
 	 * 
 	 * Default = **["Friday", "Night", "Funkin"]**
 	 */
-	 public static var TITLEMESSAGE:Array<String> = ["Friday", "Night", "Funkin"];
+	 public static var TITLEMESSAGE:Array<String> = ["Friday", "Night", "Swingin'"];
 
 	/**
 	 * Makes the Girlfriend sit on the Limo instead of the Speaker in week 4.

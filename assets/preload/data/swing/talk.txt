@@ -1,1 +1,11 @@
-:monke:monke
+:normal: Heya! Who are you? You don't look like a gorilla.
+:bf: Beep bop
+:happy: Wait.. Woah! You're that famous rapper I saw on my phone while hiding in the mines!
+:normal: How did you get here?
+:bf: Skiddly doop bop beep
+:sad: I can't understand.. Hey lemming, can you find out how this guy got here?
+:lemming: Seems like he got transported through some kind of magic vr headset.
+:sad: Aw, that sucks! I wonder who could've done that. 
+:happy: Hey, it's okay! We can help out!
+:normal: But first.. Do you think we can rap battle? I'm a fan of your work, and I've been practicing recently.
+:bf: Boop bop beep
